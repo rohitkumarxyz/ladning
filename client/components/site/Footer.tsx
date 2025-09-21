@@ -50,7 +50,7 @@ export default function Footer() {
               Measurable impact through blended learning — online, in the flow of work, and in person.
             </p>
             <div className="mt-6">
-              <Button size="lg" className="rounded-full">Request demo</Button>
+              <Button size="lg" className="rounded-full btn-anim">Request demo</Button>
             </div>
           </div>
           {columns.map((col) => (
