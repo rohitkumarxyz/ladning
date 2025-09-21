@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const nav = [
   { label: "Solutions", href: "#solutions" },
-  { label: "Programs", href: "#programs" },
+  { label: "Programs", href: "/programs" },
   { label: "Impact", href: "#impact" },
   { label: "Resources", href: "#resources" },
   { label: "About", href: "/about" },
