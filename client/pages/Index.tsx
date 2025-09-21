@@ -14,7 +14,7 @@ export default function Index() {
               Build the capabilities your teams need to perform today — with measurable impact in weeks, not years.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Button size="lg" className="rounded-full text-base px-6">Request demo</Button>
+              <Button size="lg" className="rounded-full text-base px-6 btn-anim">Request demo</Button>
               <a href="#programs" className="text-sm font-semibold underline underline-offset-4 sm:ml-2">Explore programs</a>
             </div>
             <div className="mt-10 grid grid-cols-3 gap-6 text-center text-sm text-foreground/70 max-w-md">
@@ -77,7 +77,7 @@ export default function Index() {
               desc: "Boost output with focus, prioritization and time management skills.",
             },
           ].map((c) => (
-            <div key={c.title} className="group relative overflow-hidden rounded-2xl border bg-white p-6 transition-shadow hover:shadow-lg">
+            <div key={c.title} className="group relative overflow-hidden rounded-2xl border bg-white p-6 transition-shadow hover:shadow-lg card-anim">
               <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-primary/30 blur-xl transition-transform group-hover:translate-x-2" aria-hidden="true" />
               <h3 className="heading-3">{c.title}</h3>
               <p className="mt-2 text-foreground/70">{c.desc}</p>
@@ -134,7 +134,7 @@ export default function Index() {
             { title: "Effective Communication", desc: "Clarity, influence and impact in every message." },
             { title: "High-Performance Habits", desc: "Focus, prioritization and execution that sticks." },
           ].map((p) => (
-            <article key={p.title} className="group rounded-2xl border bg-white p-6 transition-shadow hover:shadow-lg">
+            <article key={p.title} className="group rounded-2xl border bg-white p-6 transition-shadow hover:shadow-lg card-anim">
               <div className="h-40 w-full rounded-xl bg-secondary" />
               <h3 className="mt-4 text-xl font-semibold">{p.title}</h3>
               <p className="mt-2 text-foreground/70">{p.desc}</p>
@@ -189,7 +189,7 @@ export default function Index() {
             <h3 className="heading-2 max-w-2xl">Ready to power up your people?</h3>
             <p className="mt-2 max-w-2xl text-foreground/70">See how Lepaya can deliver measurable impact for your organization.</p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-              <Button size="lg" className="rounded-full">Request demo</Button>
+              <Button size="lg" className="rounded-full btn-anim">Request demo</Button>
               <a href="#contact" className="sm:ml-2 inline-flex items-center text-sm font-semibold underline underline-offset-4">Contact us</a>
             </div>
           </div>
