@@ -8,7 +8,7 @@ const nav = [
   { label: "Programs", href: "#programs" },
   { label: "Impact", href: "#impact" },
   { label: "Resources", href: "#resources" },
-  { label: "About", href: "#about" },
+  { label: "About", href: "/about" },
 ];
 
 export function Logo({ className }: { className?: string }) {
@@ -31,13 +31,19 @@ export default function Header() {
         <Logo />
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
           {nav.map((item) => (
-            <a key={item.href} href={item.href} className="text-foreground/80 hover:text-foreground transition-colors">
-              {item.label}
-            </a>
+            item.href.startsWith("/") ? (
+              <Link key={item.href} to={item.href} className="text-foreground/80 hover:text-foreground transition-colors">
+                {item.label}
+              </Link>
+            ) : (
+              <a key={item.href} href={item.href} className="text-foreground/80 hover:text-foreground transition-colors">
+                {item.label}
+              </a>
+            )
           ))}
         </nav>
         <div className="hidden md:flex items-center gap-3">
-          <a href="#contact" className="text-sm font-medium hover:underline underline-offset-4">Contact</a>
+          <Link to="/contact" className="text-sm font-medium hover:underline underline-offset-4">Contact</Link>
           <Button size="lg" className="rounded-full px-5 py-2 text-base">Request demo</Button>
         </div>
         <button aria-label="Toggle menu" className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-md border" onClick={() => setOpen((v) => !v)}>
@@ -52,11 +58,17 @@ export default function Header() {
         <div className="md:hidden border-t bg-white">
           <div className="container-tight py-3 flex flex-col gap-2">
             {nav.map((item) => (
-              <a key={item.href} href={item.href} className="py-2 text-base" onClick={() => setOpen(false)}>
-                {item.label}
-              </a>
+              item.href.startsWith("/") ? (
+                <Link key={item.href} to={item.href} className="py-2 text-base" onClick={() => setOpen(false)}>
+                  {item.label}
+                </Link>
+              ) : (
+                <a key={item.href} href={item.href} className="py-2 text-base" onClick={() => setOpen(false)}>
+                  {item.label}
+                </a>
+              )
             ))}
-            <Button className="rounded-full" onClick={() => setOpen(false)}>Request demo</Button>
+            <Link to="/contact"><Button className="rounded-full" onClick={() => setOpen(false)}>Request demo</Button></Link>
           </div>
         </div>
       )}
