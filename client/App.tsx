@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Programs from "./pages/Programs";
 import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
 
