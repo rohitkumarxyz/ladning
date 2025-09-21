@@ -44,7 +44,7 @@ export default function Header() {
         </nav>
         <div className="hidden md:flex items-center gap-3">
           <Link to="/contact" className="text-sm font-medium hover:underline underline-offset-4">Contact</Link>
-          <Button size="lg" className="rounded-full px-5 py-2 text-base">Request demo</Button>
+          <Button size="lg" className="rounded-full px-5 py-2 text-base btn-anim">Request demo</Button>
         </div>
         <button aria-label="Toggle menu" className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-md border" onClick={() => setOpen((v) => !v)}>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
