@@ -97,21 +97,58 @@
 }
 
 @layer base {
-  * { @apply border-border; }
-  html { scroll-behavior: smooth; }
-  body { @apply bg-background text-foreground antialiased; font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family:
+      "Inter",
+      system-ui,
+      -apple-system,
+      Segoe UI,
+      Roboto,
+      "Helvetica Neue",
+      Arial,
+      "Noto Sans",
+      "Apple Color Emoji",
+      "Segoe UI Emoji";
+  }
 }
 
 @layer utilities {
-  .container-tight { @apply container max-w-[1180px]; }
-  .heading-hero { @apply text-4xl leading-[1.05] tracking-tight sm:text-5xl md:text-6xl font-extrabold; }
-  .heading-2 { @apply text-3xl sm:text-4xl font-bold tracking-tight; }
-  .heading-3 { @apply text-2xl sm:text-3xl font-semibold; }
+  .container-tight {
+    @apply container max-w-[1180px];
+  }
+  .heading-hero {
+    @apply text-4xl leading-[1.05] tracking-tight sm:text-5xl md:text-6xl font-extrabold;
+  }
+  .heading-2 {
+    @apply text-3xl sm:text-4xl font-bold tracking-tight;
+  }
+  .heading-3 {
+    @apply text-2xl sm:text-3xl font-semibold;
+  }
 
   /* subtle motion helpers */
-  .card-anim { transition: transform .22s cubic-bezier(.2,.9,.2,1), box-shadow .22s cubic-bezier(.2,.9,.2,1); }
-  .card-anim:hover { transform: translateY(-6px); }
+  .card-anim {
+    transition:
+      transform 0.22s cubic-bezier(0.2, 0.9, 0.2, 1),
+      box-shadow 0.22s cubic-bezier(0.2, 0.9, 0.2, 1);
+  }
+  .card-anim:hover {
+    transform: translateY(-6px);
+  }
 
-  .btn-anim { transition: transform .14s ease, box-shadow .14s ease; }
-  .btn-anim:active { transform: translateY(1px); }
+  .btn-anim {
+    transition:
+      transform 0.14s ease,
+      box-shadow 0.14s ease;
+  }
+  .btn-anim:active {
+    transform: translateY(1px);
+  }
 }

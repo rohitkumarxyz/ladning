@@ -49,16 +49,36 @@ const sampleCourses = [
 export default function Programs() {
   return (
     <div className="container-tight py-16 md:py-24">
-      <motion.header initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+      <motion.header
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="heading-2">Programs</h1>
-          <p className="mt-3 text-foreground/70">Browse curated programs and courses designed for measurable outcomes.</p>
+          <p className="mt-3 text-foreground/70">
+            Browse curated programs and courses designed for measurable
+            outcomes.
+          </p>
         </div>
       </motion.header>
 
-      <motion.section className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
+      <motion.section
+        className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         {sampleCourses.map((c) => (
-          <CourseCard key={c.title} title={c.title} description={c.description} imageSrc={c.imageSrc} rating={c.rating} students={c.students} />
+          <CourseCard
+            key={c.title}
+            title={c.title}
+            description={c.description}
+            imageSrc={c.imageSrc}
+            rating={c.rating}
+            students={c.students}
+          />
         ))}
       </motion.section>
     </div>
