@@ -121,7 +121,7 @@
 
 @layer utilities {
   .container-tight {
-    @apply container max-w-[1180px];
+    @apply container max-w-[1500px];
   }
   .heading-hero {
     @apply text-4xl leading-[1.05] tracking-tight sm:text-5xl md:text-6xl font-extrabold;
@@ -133,22 +133,372 @@
     @apply text-2xl sm:text-3xl font-semibold;
   }
 
-  /* subtle motion helpers */
+  /* Enhanced motion helpers */
   .card-anim {
     transition:
-      transform 0.22s cubic-bezier(0.2, 0.9, 0.2, 1),
-      box-shadow 0.22s cubic-bezier(0.2, 0.9, 0.2, 1);
+      transform 0.3s cubic-bezier(0.2, 0.9, 0.2, 1),
+      box-shadow 0.3s cubic-bezier(0.2, 0.9, 0.2, 1),
+      background 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
   }
   .card-anim:hover {
-    transform: translateY(-6px);
+    transform: translateY(-12px) scale(1.03) rotateX(5deg);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  }
+  .card-anim:active {
+    transform: translateY(-8px) scale(1.01);
+  }
+  
+  /* Clickable card overlay */
+  .card-anim::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 212, 0, 0.1) 0%, rgba(102, 126, 234, 0.1) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+  .card-anim:hover::before {
+    opacity: 1;
+  }
+  
+  /* Ensure content is above overlay */
+  .card-anim > * {
+    position: relative;
+    z-index: 2;
   }
 
   .btn-anim {
     transition:
-      transform 0.14s ease,
-      box-shadow 0.14s ease;
+      transform 0.2s cubic-bezier(0.2, 0.9, 0.2, 1),
+      box-shadow 0.2s ease,
+      background 0.2s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-anim:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 212, 0, 0.3);
   }
   .btn-anim:active {
     transform: translateY(1px);
+  }
+
+  /* Floating animation */
+  .float-anim {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .float-anim-delayed {
+    animation: float 6s ease-in-out infinite 2s;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Pulse animation */
+  .pulse-anim {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+
+  /* Slide in animations */
+  .slide-in-left {
+    animation: slideInLeft 0.8s cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.8s cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Stagger animation */
+  .stagger-anim {
+    animation: staggerIn 0.6s cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+  }
+
+  @keyframes staggerIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Glow effect */
+  .glow-effect {
+    box-shadow: 0 0 20px rgba(255, 212, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .glow-effect:hover {
+    box-shadow: 0 0 30px rgba(255, 212, 0, 0.5);
+  }
+
+  /* Background patterns */
+  .bg-pattern {
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(255, 212, 0, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(102, 126, 234, 0.1) 0%, transparent 50%);
+  }
+
+  /* Number counter animation */
+  .counter-anim {
+    animation: countUp 2s ease-out forwards;
+  }
+
+  @keyframes countUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  /* Professional card effects */
+  .professional-card {
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.2, 1);
+    border: 1px solid #e5e7eb;
+  }
+  
+  .professional-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-color: #d1d5db;
+  }
+
+  /* Particle effect background */
+  .particle-bg {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .particle-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, rgba(255, 212, 0, 0.3), transparent),
+      radial-gradient(2px 2px at 40px 70px, rgba(102, 126, 234, 0.3), transparent),
+      radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.2), transparent),
+      radial-gradient(1px 1px at 130px 80px, rgba(255, 212, 0, 0.2), transparent);
+    background-repeat: repeat;
+    background-size: 150px 100px;
+    animation: particleFloat 20s linear infinite;
+    opacity: 0.6;
+  }
+
+  @keyframes particleFloat {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-100px); }
+  }
+
+  /* 3D tilt effect */
+  .tilt-3d {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+  }
+  
+  .tilt-3d:hover {
+    transform: perspective(1000px) rotateX(10deg) rotateY(10deg) translateZ(20px);
+  }
+
+  /* Magnetic hover effect */
+  .magnetic {
+    transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.2, 1);
+  }
+  
+  .magnetic:hover {
+    transform: scale(1.1) rotate(2deg);
+  }
+
+  /* Ripple effect */
+  .ripple {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ripple::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+  }
+  
+  .ripple:active::after {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Professional text styling */
+  .professional-text {
+    color: #1f2937;
+    font-weight: 600;
+  }
+
+  /* Bounce animation */
+  .bounce-in {
+    animation: bounceIn 0.8s cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+  }
+
+  @keyframes bounceIn {
+    0% { transform: scale(0.3) rotate(-10deg); opacity: 0; }
+    50% { transform: scale(1.05) rotate(5deg); }
+    70% { transform: scale(0.9) rotate(-2deg); }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  }
+
+  /* Loading shimmer */
+  .shimmer {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmerLoad 1.5s infinite;
+  }
+
+  @keyframes shimmerLoad {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    .container-tight {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    .heading-hero {
+      font-size: 2rem;
+      line-height: 1.1;
+    }
+    
+    .heading-2 {
+      font-size: 1.875rem;
+      line-height: 1.2;
+    }
+    
+    .heading-3 {
+      font-size: 1.5rem;
+      line-height: 1.3;
+    }
+    
+    /* Reduce animations on mobile for better performance */
+    .card-anim:hover {
+      transform: translateY(-2px);
+    }
+    
+    .float-anim,
+    .float-anim-delayed,
+    .pulse-anim {
+      animation: none;
+    }
+    
+    /* Touch-friendly button sizes */
+    .btn-anim {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+
+  /* Tablet optimizations */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container-tight {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  /* Error page animations */
+  .error-shake {
+    animation: errorShake 0.5s ease-in-out;
+  }
+
+  @keyframes errorShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+  }
+
+  .error-pulse {
+    animation: errorPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes errorPulse {
+    0%, 100% { 
+      box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+    }
+    50% { 
+      box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+    }
+  }
+
+  .network-error {
+    animation: networkError 1.5s ease-in-out infinite;
+  }
+
+  @keyframes networkError {
+    0%, 100% { 
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% { 
+      opacity: 0.7;
+      transform: scale(1.05);
+    }
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export interface CourseCardProps {
   imageSrc: string;
@@ -8,6 +9,7 @@ export interface CourseCardProps {
   description: string;
   rating: number; // 0-5
   students: number;
+  href?: string;
 }
 
 export default function CourseCard({
@@ -16,6 +18,7 @@ export default function CourseCard({
   description,
   rating,
   students,
+  href,
 }: CourseCardProps) {
   const fullStars = Math.floor(rating);
   const hasHalf = rating - fullStars >= 0.5;
@@ -28,7 +31,10 @@ export default function CourseCard({
       <img src={imageSrc} alt={title} className="h-44 w-full object-cover" />
       <div className="p-4">
         <h3 className="text-lg font-semibold">{title}</h3>
-        <p className="mt-2 text-sm text-foreground/70">{description}</p>
+        <p className="mt-2 text-sm text-foreground/70">
+          {description.split(" ").slice(0, 10).join(" ")}
+          {description.split(" ").length > 10 ? "..." : ""}
+        </p>
 
         <div className="mt-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -88,9 +94,17 @@ export default function CourseCard({
           </div>
 
           <div>
-            <Button size="sm" className="rounded-full btn-anim">
-              Enroll
-            </Button>
+            {href ? (
+              <Link to={href}>
+                <Button size="sm" className="rounded-full btn-anim">
+                  Enroll
+                </Button>
+              </Link>
+            ) : (
+              <Button size="sm" className="rounded-full btn-anim">
+                Enroll
+              </Button>
+            )}
           </div>
         </div>
       </div>

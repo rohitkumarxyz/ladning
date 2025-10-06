@@ -1,52 +1,43 @@
 import CourseCard from "@/components/programs/CourseCard";
 import { motion } from "framer-motion";
-
-const sampleCourses = [
-  {
-    title: "Manager Essentials",
-    description: "From individual contributor to confident people leader.",
-    imageSrc: "/placeholder.svg",
-    rating: 4.7,
-    students: 12450,
-  },
-  {
-    title: "Effective Communication",
-    description: "Clarity, influence and impact in every message.",
-    imageSrc: "/placeholder.svg",
-    rating: 4.5,
-    students: 9840,
-  },
-  {
-    title: "High-Performance Habits",
-    description: "Focus, prioritization and execution that sticks.",
-    imageSrc: "/placeholder.svg",
-    rating: 4.8,
-    students: 15230,
-  },
-  {
-    title: "Coaching at Scale",
-    description: "Coach your team to autonomous performance.",
-    imageSrc: "/placeholder.svg",
-    rating: 4.6,
-    students: 8320,
-  },
-  {
-    title: "Inclusive Leadership",
-    description: "Building diverse, high-performing teams.",
-    imageSrc: "/placeholder.svg",
-    rating: 4.4,
-    students: 6420,
-  },
-  {
-    title: "Sales Enablement",
-    description: "Train reps to win more deals with practical skills.",
-    imageSrc: "/placeholder.svg",
-    rating: 4.3,
-    students: 11200,
-  },
-];
+import { useState, useEffect } from "react";
+import { CoursesAPIResponse } from "@shared/api";
 
 export default function Programs() {
+  const [courses, setCourses] = useState<CoursesAPIResponse>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchCourses = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+        const response = await fetch("http://localhost:3001/api/courses/");
+
+        if (!response.ok) {
+          throw new Error(`Failed to fetch courses: ${response.statusText}`);
+        }
+
+        const data: CoursesAPIResponse = await response.json();
+        // Sort courses by serialNumber in ascending order (lowest numbers first)
+        const sortedData = data.sort((a, b) => a.serialNumber - b.serialNumber);
+        setCourses(sortedData);
+      } catch (err) {
+        setError(
+          err instanceof Error
+            ? err.message
+            : "An error occurred while fetching courses",
+        );
+        console.error("Error fetching courses:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchCourses();
+  }, []);
+
   return (
     <div className="container-tight py-16 md:py-24">
       <motion.header
@@ -63,24 +54,62 @@ export default function Programs() {
         </div>
       </motion.header>
 
-      <motion.section
-        className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-      >
-        {sampleCourses.map((c) => (
-          <CourseCard
-            key={c.title}
-            title={c.title}
-            description={c.description}
-            imageSrc={c.imageSrc}
-            rating={c.rating}
-            students={c.students}
-          />
-        ))}
-      </motion.section>
+      {loading && (
+        <motion.div
+          className="mt-8 text-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          <p className="text-foreground/70">Loading courses...</p>
+        </motion.div>
+      )}
+
+      {error && (
+        <motion.div
+          className="mt-8 text-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          <p className="text-red-500">Error: {error}</p>
+        </motion.div>
+      )}
+
+      {!loading && !error && courses.length === 0 && (
+        <motion.div
+          className="mt-8 text-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          <p className="text-foreground/70">
+            No courses available at the moment.
+          </p>
+        </motion.div>
+      )}
+
+      {!loading && !error && courses.length > 0 && (
+        <motion.section
+          className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          {courses.map((course) => (
+            <CourseCard
+              key={course._id}
+              title={course.title}
+              description={course.description}
+              imageSrc="/stock4.jpeg" // Using new professional stock image
+              rating={course.rating}
+              students={course.studentsEnrolled}
+              href={`/courses/${course._id}`}
+            />
+          ))}
+        </motion.section>
+      )}
     </div>
   );
 }
