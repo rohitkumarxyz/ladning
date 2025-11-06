@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
@@ -117,15 +116,14 @@ const ErrorPage = ({
             >
               Try Again
             </Button>
-            <Link to="/">
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="rounded-full px-8 py-3 btn-anim"
-              >
-                Back to Dashboard
-              </Button>
-            </Link>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="rounded-full px-8 py-3 btn-anim"
+              onClick={() => window.location.href = "/"}
+            >
+              Back to Home
+            </Button>
           </motion.div>
 
           {/* Error Recovery Tips */}
@@ -156,9 +154,16 @@ const ErrorPage = ({
             <p className="text-sm text-gray-700 mb-2">
               Need immediate assistance?
             </p>
-            <Link to="/contact" className="text-primary font-semibold hover:text-primary/80 transition-colors">
+            <a 
+              href="/contact" 
+              className="text-primary font-semibold hover:text-primary/80 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "/contact";
+              }}
+            >
               Contact Support Team →
-            </Link>
+            </a>
           </motion.div>
         </motion.div>
       </div>

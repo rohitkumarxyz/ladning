@@ -26,19 +26,19 @@ export default function CourseCard({
 
   return (
     <article
-      className={cn("rounded-2xl border bg-white overflow-hidden", "card-anim")}
+      className={cn("rounded-2xl border border-border bg-card overflow-hidden hover:border-primary/50 transition-colors", "card-anim")}
     >
       <img src={imageSrc} alt={title} className="h-44 w-full object-cover" />
       <div className="p-4">
-        <h3 className="text-lg font-semibold">{title}</h3>
-        <p className="mt-2 text-sm text-foreground/70">
+        <h3 className="text-lg font-semibold text-foreground">{title}</h3>
+        <p className="mt-2 text-sm text-muted-foreground">
           {description.split(" ").slice(0, 10).join(" ")}
           {description.split(" ").length > 10 ? "..." : ""}
         </p>
 
         <div className="mt-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="flex items-center text-yellow-500">
+            <div className="flex items-center text-primary">
               {Array.from({ length: fullStars }).map((_, i) => (
                 <svg
                   key={i}
@@ -60,8 +60,8 @@ export default function CourseCard({
                 >
                   <defs>
                     <linearGradient id="half">
-                      <stop offset="50%" stopColor="#f59e0b" />
-                      <stop offset="50%" stopColor="#e5e7eb" />
+                      <stop offset="50%" stopColor="hsl(var(--primary))" />
+                      <stop offset="50%" stopColor="hsl(var(--muted))" />
                     </linearGradient>
                   </defs>
                   <path

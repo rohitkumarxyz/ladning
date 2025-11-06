@@ -1,0 +1,766 @@
+{
+    "courses": [
+        {
+            "id": "master-scalping-swing-trading",
+            "title": "Master In Scalping and Swing Trading",
+            "description": "Master the art of scalping and swing trading. Learn advanced strategies for intraday and positional trading with technical analysis and derivatives.",
+            "instructor": {
+                "name": "CA MOHIT GUPTA",
+                "image": "/tutor.png",
+                "bio": "Expert in Scalping and Swing Trading with proven track record in intraday and positional strategies.",
+                "qualifications": [
+                    "SEBI Registered",
+                    "Scalping Expert",
+                    "Swing Trading Specialist"
+                ]
+            },
+            "currentPrice": 22000,
+            "originalPrice": 30000,
+            "rating": 5,
+            "reviews": 156,
+            "enrollments": 3800,
+            "coverImage": "/course/sachin2.jpg",
+            "themeColor": "yellow",
+            "badge": "Premium",
+            "category": "Popular",
+            "isOpen": true,
+            "duration": "25 Classes",
+            "modules": [
+                {
+                    "id": "basics-of-stock-market",
+                    "title": "Basics of Stock Market",
+                    "classCount": 15,
+                    "fee": 18000,
+                    "topics": [
+                        "Introduction to Investments",
+                        "Assets Class - Historical Returns",
+                        "What are Shares & Stocks?",
+                        "Primary Market",
+                        "Key Players in Secondary Market",
+                        "Broker & their role & responsibilities",
+                        "What is IPO? Steps in IPO",
+                        "Live Trading or Software Knowledge",
+                        "What is Market Capitalization?",
+                        "Types of Market Capitalization",
+                        "Taxation Part in Details",
+                        "Dividends, Ex-Date, Record Date",
+                        "Bonus: Why & How the Bonus is issued, ratio calculation",
+                        "Difference b/w Bonus & Splits",
+                        "Buyback, Merger, Demerger, FPO, OFS & Right Issue",
+                        "Acquisition & Delisting",
+                        "Terms like: Inflation, Interest Rates, Major Economic Terms"
+                    ]
+                },
+                {
+                    "id": "technical-analysis",
+                    "title": "Technical Analysis",
+                    "classCount": 15,
+                    "fee": 18000,
+                    "topics": [
+                        "Introduction to Technical Analysis?",
+                        "Difference between FA & TA",
+                        "Dow Theory (Phase of Markets)",
+                        "Introduction to Candlesticks",
+                        "Two Candle Patterns: Engulfing & Harami Patterns, Piercing Pattern & Dark Cloud Cover",
+                        "Three Candle Patterns: Falling & Rising Three, Morning Star & Evening Star",
+                        "Moving Averages: EMA & SMA, Calculations & Representation",
+                        "Trend Lines",
+                        "Complete Price Action Trading Setup",
+                        "Chart Patterns & Their Study (Price Channels: Bullish, Bearish, Cup & Handle, Rounding Top & Rounding Bottom)",
+                        "MACD (Moving Average Convergence and Divergence)",
+                        "RSI (Relative Strength Index)",
+                        "William % R",
+                        "Stochastics: Calculation, Use in Practical Trading (Intraday & Swing)",
+                        "Fibonacci Retracement & Extensions",
+                        "ADX & ATR",
+                        "Live Trading Session",
+                        "Psychology & Risk Management"
+                    ]
+                },
+                {
+                    "id": "derivatives-market",
+                    "title": "Derivatives Market (Futures & Options)",
+                    "classCount": 15,
+                    "fee": 18000,
+                    "topics": [
+                        "Introduction to Derivatives: Difference b/w Futures & Forwards, Basic Future Terminologies, Participants in Derivative Market",
+                        "Pricing of Futures: How to calculate Future Price?, Zone of Convergence, Physical Settlement",
+                        "Hedging: Hedging of Stocks with Futures, Concept of BETA, Hedging Using Index (Nifty & Bank Nifty)",
+                        "Options Introduction: What is Option Trading?, Comparison b/w Cash Market, Future Market & Option Market, Call Option, Moneyness of Option, Pricing of Options, Example & Payoff Calculation",
+                        "Introduction to Put Option: Moneyness of Option, Pricing of Options, Example & Payoff Calculation",
+                        "Introduction to Greeks: What are Greeks?, Use of Greeks, Options Buying Strategies (Call), Options Buying Strategies (Put)",
+                        "Option Buying Strategies (Live example on Stocks & Index, Bull Call Spreads & Bear Call Spreads (ITM, OTM & ATM), Straddles & Strangles",
+                        "Long Strategies: Call Ratio Backspread, Put Ratio, Back Spread, Long Butterfly Spread, Iron Condors, Iron Flies, Payoffs & Live Examples",
+                        "Spreads: Bull Call Spread (Revision), Converting it to Ratio Spreads, Bear Put Spread (Revision), Converting it to Ratio Spreads, Collar Spreads, Ratio Spreads, Standard & Reverse Jade Lizard",
+                        "Straddles & Strangles, Iron Fly & Iron Condors, Covered Calls & Cash Protected Puts, Advanced Selling Strategies, Revision & Practical Implications",
+                        "Open Interest (Advanced), Option Chain Analysis (Advanced), PCR Ratio & Max Pain",
+                        "All about Volatility: Explanation of IV, IVP, Normal Distribution & Stock Returns, Volatility Index, VIX Trading & Adjustments, Volatility Smile & Volatility Skew, Range Calculation using Historical Volatility"
+                    ]
+                },
+                {
+                    "id": "commodity-market",
+                    "title": "Commodity Market",
+                    "classCount": 3,
+                    "fee": 5000,
+                    "topics": [
+                        "Introduction to Commodities Market: Diversification, Hedging, Speculation, Commodities Exchanges",
+                        "Commodity Derivatives Explained: Futures Contracts in Commodities, Options in Commodities",
+                        "Fundamental Analysis in Commodities: Demand-Supply Drivers, Macroeconomics Triggers",
+                        "Hedging & Delivery Concepts",
+                        "Risk Management in Commodities: Volatility in Commodities, Position Sizing, Leverage Management",
+                        "Option Trading in Commodities: Commodity Options, Option Chain Analysis",
+                        "Technical Analysis for Commodities: Charts & Patterns, Key Indicators, Multi-timeframe Commodity Analysis",
+                        "Practice & Live Market Setup"
+                    ]
+                },
+                {
+                    "id": "no-code-algo",
+                    "title": "No Code Algo",
+                    "classCount": 5,
+                    "fee": 8000,
+                    "topics": [
+                        "Option Selling Strategies: Straddle, Strangle Builders, Multi-leg Deployment",
+                        "Indicator-based Option Strategies: Combine Indicators, Options, Premium Threshold Entry, VIX Filtered Strategies",
+                        "Advanced Logic - ORB, Trending Day Filters, Capital Allocation Models",
+                        "Calendar-Based & Multi-Asset Algos: Day-Based Strategies, Index + Stock Combos, Multi Asset Deployment",
+                        "Algo Monitoring & Automation: Live Deployment Tips, Broker/API Integrations",
+                        "Introduction to Algo Trading",
+                        "Basics of No-Code Platforms: Overview of Tools, Workflow & Backtest Settings",
+                        "Building No Code Intraday Strategies: Stoploss, Targets, Win Rate, Max Drawdown, Expectancy",
+                        "Positional Strategy Automation: Multi-Day Strategies, Gap Up/Down Handling, Delivery vs MIS logic",
+                        "Algo Portfolio Management: Diversification in Algos & Capital Split Planning"
+                    ]
+                },
+                {
+                    "id": "psychology-risk-management",
+                    "title": "Psychology & Risk Management",
+                    "classCount": 3,
+                    "fee": 5000,
+                    "topics": [
+                        "Psychology of Trading",
+                        "Risk Management Principles",
+                        "Position Sizing",
+                        "Stop Loss Strategies",
+                        "Emotional Control in Trading",
+                        "Trading Discipline"
+                    ]
+                },
+                {
+                    "id": "trading-desk",
+                    "title": "Trading Desk",
+                    "classCount": 2,
+                    "fee": 3000,
+                    "topics": [
+                        "Live Trading Sessions",
+                        "Market Analysis",
+                        "Trade Execution",
+                        "Real-time Problem Solving"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "investment-fundamental-analysis",
+            "title": "Investment & Fundamental Analysis",
+            "description": "Learn fundamental analysis for long-term investing and wealth creation. Master business analysis, financial statements, and valuation methods.",
+            "instructor": {
+                "name": "CA MANISH SINGH",
+                "image": "/tutor.png",
+                "bio": "Expert in Fundamental Analysis and Investment Strategies with extensive experience in financial markets.",
+                "qualifications": [
+                    "CA",
+                    "CFA",
+                    "Investment Advisor"
+                ]
+            },
+            "currentPrice": 15000,
+            "originalPrice": 22000,
+            "rating": 5,
+            "reviews": 189,
+            "enrollments": 4200,
+            "coverImage": "/course/param.jpg",
+            "themeColor": "blue",
+            "badge": "Premium",
+            "category": "Popular",
+            "isOpen": true,
+            "duration": "20 Classes",
+            "modules": [
+                {
+                    "id": "basics-of-stock-market",
+                    "title": "Basics of Stock Market",
+                    "classCount": 15,
+                    "fee": 18000,
+                    "topics": [
+                        "Introduction to Investments",
+                        "Assets Class - Historical Returns",
+                        "What are Shares & Stocks?",
+                        "Primary Market",
+                        "Key Players in Secondary Market",
+                        "Broker & their role & responsibilities",
+                        "What is IPO? Steps in IPO",
+                        "Live Trading or Software Knowledge",
+                        "What is Market Capitalization?",
+                        "Types of Market Capitalization",
+                        "Taxation Part in Details",
+                        "Dividends, Ex-Date, Record Date",
+                        "Bonus: Why & How the Bonus is issued, ratio calculation",
+                        "Difference b/w Bonus & Splits",
+                        "Buyback, Merger, Demerger, FPO, OFS & Right Issue",
+                        "Acquisition & Delisting",
+                        "Terms like: Inflation, Interest Rates, Major Economic Terms"
+                    ]
+                },
+                {
+                    "id": "mutual-fund",
+                    "title": "Mutual Fund",
+                    "classCount": 8,
+                    "fee": 10000,
+                    "topics": [
+                        "Introduction to Mutual Funds: Benefits, NAV, Role of Fund Managers",
+                        "Types of Mutual Funds: Equity, Debt, Hybrid, ELSS, Growth vs Dividend Mutual Fund",
+                        "SIP vs Lump Sum Investing",
+                        "Risk & Return in Mutual Funds: Fund Volatility",
+                        "Risk Profiling: Conservative, Moderate & Aggressive",
+                        "Taxation on Mutual Funds: Dividend Distribution Tax vs Growth Option",
+                        "Equity Fund Taxation: LTCG, STCG",
+                        "How to Invest in Mutual Funds?",
+                        "Monitoring & Reviewing your Investments: When to Exit or switch a Fund, Tracking Fund Performance using Apps/Websites",
+                        "Mutual Fund Myths Busted",
+                        "Live Demo & Q/A Session"
+                    ]
+                },
+                {
+                    "id": "fundamental-analysis",
+                    "title": "Fundamental Analysis",
+                    "classCount": 12,
+                    "fee": 15000,
+                    "topics": [
+                        "Introduction to Fundamental Analysis: Importance of FA for Long-Term Investing & Wealth Creation",
+                        "Qualitative Analysis: Business Models, Analyze Revenue Sources & Scalability, Uniqueness, Understand Competitive advantages & Economic moats",
+                        "Industry & Sector Analysis: Understand the Company's position in its Sector (Market Share)",
+                        "Reading Annual Reports: Chairman's Letter, Financials, Notes to Accounts, Identifying Red Flags in Audit Reports & Disclosures",
+                        "Financial Statement Analysis: Balance Sheet, Profit & Loss Statement, Cash Flow Statement",
+                        "Financial Ratios: ROE, ROCE, Net Profit Margin, Current Ratio, Quick Ratio, Debt-to-Equity, Interest Coverage Ratio",
+                        "Valuation Methods: Price to Earnings (P/E), PEG Ratio, Forward PE & Earnings Yield concept",
+                        "Intrinsic Value & Margin of Safety, Discounted Cash Flow (DCF Model)",
+                        "Moat & Competitive Advantage: Brand, Patents, Cost Advantages, Network Effects",
+                        "Price to Book (P/B), EV/EBITDA & Price to Sales (P/S)"
+                    ]
+                },
+                {
+                    "id": "psychology-risk-management",
+                    "title": "Psychology & Risk Management",
+                    "classCount": 3,
+                    "fee": 5000,
+                    "topics": [
+                        "Psychology of Trading",
+                        "Risk Management Principles",
+                        "Position Sizing",
+                        "Stop Loss Strategies",
+                        "Emotional Control in Trading",
+                        "Trading Discipline"
+                    ]
+                },
+                {
+                    "id": "trading-desk",
+                    "title": "Trading Desk",
+                    "classCount": 2,
+                    "fee": 3000,
+                    "topics": [
+                        "Live Trading Sessions",
+                        "Market Analysis",
+                        "Trade Execution",
+                        "Real-time Problem Solving"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "technical-and-option-selling",
+            "title": "Technical and Option Selling",
+            "description": "Master technical analysis and options trading strategies. Learn from basics to advanced techniques including chart patterns, indicators, and derivatives trading.",
+            "instructor": {
+                "name": "CA MOHIT GUPTA",
+                "image": "/tutor.png",
+                "bio": "Expert Options Trader, Instructor, FinGrad with 10+ years of experience in trading and teaching.",
+                "qualifications": [
+                    "SEBI Registered",
+                    "NISM Certified",
+                    "Trading Expert"
+                ]
+            },
+            "currentPrice": 18000,
+            "originalPrice": 25000,
+            "rating": 5,
+            "reviews": 234,
+            "enrollments": 5600,
+            "coverImage": "/course/Chahat.jpg",
+            "themeColor": "green",
+            "badge": "Premium",
+            "category": "Popular",
+            "isOpen": true,
+            "duration": "15 Classes",
+            "modules": [
+                {
+                    "id": "basics-of-stock-market",
+                    "title": "Basics of Stock Market",
+                    "classCount": 15,
+                    "fee": 18000,
+                    "topics": [
+                        "Introduction to Investments",
+                        "Assets Class - Historical Returns",
+                        "What are Shares & Stocks?",
+                        "Primary Market",
+                        "Key Players in Secondary Market",
+                        "Broker & their role & responsibilities",
+                        "What is IPO? Steps in IPO",
+                        "Live Trading or Software Knowledge",
+                        "What is Market Capitalization?",
+                        "Types of Market Capitalization",
+                        "Taxation Part in Details",
+                        "Dividends, Ex-Date, Record Date",
+                        "Bonus: Why & How the Bonus is issued, ratio calculation",
+                        "Difference b/w Bonus & Splits",
+                        "Buyback, Merger, Demerger, FPO, OFS & Right Issue",
+                        "Acquisition & Delisting",
+                        "Terms like: Inflation, Interest Rates, Major Economic Terms"
+                    ]
+                },
+                {
+                    "id": "technical-analysis",
+                    "title": "Technical Analysis",
+                    "classCount": 15,
+                    "fee": 18000,
+                    "topics": [
+                        "Introduction to Technical Analysis?",
+                        "Difference between FA & TA",
+                        "Dow Theory (Phase of Markets)",
+                        "Introduction to Candlesticks",
+                        "Two Candle Patterns: Engulfing & Harami Patterns, Piercing Pattern & Dark Cloud Cover",
+                        "Three Candle Patterns: Falling & Rising Three, Morning Star & Evening Star",
+                        "Moving Averages: EMA & SMA, Calculations & Representation",
+                        "Trend Lines",
+                        "Complete Price Action Trading Setup",
+                        "Chart Patterns & Their Study (Price Channels: Bullish, Bearish, Cup & Handle, Rounding Top & Rounding Bottom)",
+                        "MACD (Moving Average Convergence and Divergence)",
+                        "RSI (Relative Strength Index)",
+                        "William % R",
+                        "Stochastics: Calculation, Use in Practical Trading (Intraday & Swing)",
+                        "Fibonacci Retracement & Extensions",
+                        "ADX & ATR",
+                        "Live Trading Session",
+                        "Psychology & Risk Management"
+                    ]
+                },
+                {
+                    "id": "derivatives-market",
+                    "title": "Derivatives Market (Futures & Options)",
+                    "classCount": 15,
+                    "fee": 18000,
+                    "topics": [
+                        "Introduction to Derivatives: Difference b/w Futures & Forwards, Basic Future Terminologies, Participants in Derivative Market",
+                        "Pricing of Futures: How to calculate Future Price?, Zone of Convergence, Physical Settlement",
+                        "Hedging: Hedging of Stocks with Futures, Concept of BETA, Hedging Using Index (Nifty & Bank Nifty)",
+                        "Options Introduction: What is Option Trading?, Comparison b/w Cash Market, Future Market & Option Market, Call Option, Moneyness of Option, Pricing of Options, Example & Payoff Calculation",
+                        "Introduction to Put Option: Moneyness of Option, Pricing of Options, Example & Payoff Calculation",
+                        "Introduction to Greeks: What are Greeks?, Use of Greeks, Options Buying Strategies (Call), Options Buying Strategies (Put)",
+                        "Option Buying Strategies (Live example on Stocks & Index, Bull Call Spreads & Bear Call Spreads (ITM, OTM & ATM), Straddles & Strangles",
+                        "Long Strategies: Call Ratio Backspread, Put Ratio, Back Spread, Long Butterfly Spread, Iron Condors, Iron Flies, Payoffs & Live Examples",
+                        "Spreads: Bull Call Spread (Revision), Converting it to Ratio Spreads, Bear Put Spread (Revision), Converting it to Ratio Spreads, Collar Spreads, Ratio Spreads, Standard & Reverse Jade Lizard",
+                        "Straddles & Strangles, Iron Fly & Iron Condors, Covered Calls & Cash Protected Puts, Advanced Selling Strategies, Revision & Practical Implications",
+                        "Open Interest (Advanced), Option Chain Analysis (Advanced), PCR Ratio & Max Pain",
+                        "All about Volatility: Explanation of IV, IVP, Normal Distribution & Stock Returns, Volatility Index, VIX Trading & Adjustments, Volatility Smile & Volatility Skew, Range Calculation using Historical Volatility"
+                    ]
+                },
+                {
+                    "id": "forex-market",
+                    "title": "Forex Market",
+                    "classCount": 5,
+                    "fee": 7500,
+                    "topics": [
+                        "Introduction to Forex: Global Currency Market Overview, Forex as Over-the-Counter (OTC) Market, How Forex Trading Works?",
+                        "Participants & Types of Forex Markets",
+                        "Currency Quotes",
+                        "PiP Calculation: How to read Forex quotes, Lot Sizes, Spread & Commission Models",
+                        "Forex Trading Platforms: MT4, MT5 & Trading View",
+                        "Order Types: Market Order, Limit Order, Stop Order, Stop-Loss, Take Profit Orders, Trailing Stops",
+                        "Execution Models: Instant Execution, Market Execution, Slippage Execution",
+                        "Fundamental Analysis in Forex (Central Bank Policies, Major News & Events)"
+                    ]
+                },
+                {
+                    "id": "psychology-risk-management",
+                    "title": "Psychology & Risk Management",
+                    "classCount": 3,
+                    "fee": 5000,
+                    "topics": [
+                        "Psychology of Trading",
+                        "Risk Management Principles",
+                        "Position Sizing",
+                        "Stop Loss Strategies",
+                        "Emotional Control in Trading",
+                        "Trading Discipline"
+                    ]
+                },
+                {
+                    "id": "trading-desk",
+                    "title": "Trading Desk",
+                    "classCount": 2,
+                    "fee": 3000,
+                    "topics": [
+                        "Live Trading Sessions",
+                        "Market Analysis",
+                        "Trade Execution",
+                        "Real-time Problem Solving"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "forex-art-of-currency",
+            "title": "Forex : Art of Currency",
+            "description": "Master the art of currency trading. Learn forex fundamentals, technical analysis, and advanced trading strategies for the global currency market.",
+            "instructor": {
+                "name": "CA MOHIT GUPTA",
+                "image": "/tutor.png",
+                "bio": "Forex trading expert with extensive experience in global currency markets and technical analysis.",
+                "qualifications": [
+                    "Forex Expert",
+                    "Currency Trading Specialist",
+                    "International Markets"
+                ]
+            },
+            "currentPrice": 18000,
+            "originalPrice": 25000,
+            "rating": 5,
+            "reviews": 142,
+            "enrollments": 3500,
+            "coverImage": "/course/Chahat.jpg",
+            "themeColor": "red",
+            "badge": "Premium",
+            "category": "Courses",
+            "isOpen": true,
+            "duration": "20 Classes",
+            "modules": [
+                {
+                    "id": "basics-of-stock-market",
+                    "title": "Basics of Stock Market",
+                    "classCount": 15,
+                    "fee": 18000,
+                    "topics": [
+                        "Introduction to Investments",
+                        "Assets Class - Historical Returns",
+                        "What are Shares & Stocks?",
+                        "Primary Market",
+                        "Key Players in Secondary Market",
+                        "Broker & their role & responsibilities",
+                        "What is IPO? Steps in IPO",
+                        "Live Trading or Software Knowledge",
+                        "What is Market Capitalization?",
+                        "Types of Market Capitalization",
+                        "Taxation Part in Details",
+                        "Dividends, Ex-Date, Record Date",
+                        "Bonus: Why & How the Bonus is issued, ratio calculation",
+                        "Difference b/w Bonus & Splits",
+                        "Buyback, Merger, Demerger, FPO, OFS & Right Issue",
+                        "Acquisition & Delisting",
+                        "Terms like: Inflation, Interest Rates, Major Economic Terms"
+                    ]
+                },
+                {
+                    "id": "technical-analysis",
+                    "title": "Technical Analysis",
+                    "classCount": 15,
+                    "fee": 18000,
+                    "topics": [
+                        "Introduction to Technical Analysis?",
+                        "Difference between FA & TA",
+                        "Dow Theory (Phase of Markets)",
+                        "Introduction to Candlesticks",
+                        "Two Candle Patterns: Engulfing & Harami Patterns, Piercing Pattern & Dark Cloud Cover",
+                        "Three Candle Patterns: Falling & Rising Three, Morning Star & Evening Star",
+                        "Moving Averages: EMA & SMA, Calculations & Representation",
+                        "Trend Lines",
+                        "Complete Price Action Trading Setup",
+                        "Chart Patterns & Their Study (Price Channels: Bullish, Bearish, Cup & Handle, Rounding Top & Rounding Bottom)",
+                        "MACD (Moving Average Convergence and Divergence)",
+                        "RSI (Relative Strength Index)",
+                        "William % R",
+                        "Stochastics: Calculation, Use in Practical Trading (Intraday & Swing)",
+                        "Fibonacci Retracement & Extensions",
+                        "ADX & ATR",
+                        "Live Trading Session",
+                        "Psychology & Risk Management"
+                    ]
+                },
+                {
+                    "id": "forex-market",
+                    "title": "Forex Market",
+                    "classCount": 5,
+                    "fee": 7500,
+                    "topics": [
+                        "Introduction to Forex: Global Currency Market Overview, Forex as Over-the-Counter (OTC) Market, How Forex Trading Works?",
+                        "Participants & Types of Forex Markets",
+                        "Currency Quotes",
+                        "PiP Calculation: How to read Forex quotes, Lot Sizes, Spread & Commission Models",
+                        "Forex Trading Platforms: MT4, MT5 & Trading View",
+                        "Order Types: Market Order, Limit Order, Stop Order, Stop-Loss, Take Profit Orders, Trailing Stops",
+                        "Execution Models: Instant Execution, Market Execution, Slippage Execution",
+                        "Fundamental Analysis in Forex (Central Bank Policies, Major News & Events)"
+                    ]
+                },
+                {
+                    "id": "derivatives-market",
+                    "title": "Derivatives Market (Futures & Options)",
+                    "classCount": 15,
+                    "fee": 18000,
+                    "topics": [
+                        "Introduction to Derivatives: Difference b/w Futures & Forwards, Basic Future Terminologies, Participants in Derivative Market",
+                        "Pricing of Futures: How to calculate Future Price?, Zone of Convergence, Physical Settlement",
+                        "Hedging: Hedging of Stocks with Futures, Concept of BETA, Hedging Using Index (Nifty & Bank Nifty)",
+                        "Options Introduction: What is Option Trading?, Comparison b/w Cash Market, Future Market & Option Market, Call Option, Moneyness of Option, Pricing of Options, Example & Payoff Calculation",
+                        "Introduction to Put Option: Moneyness of Option, Pricing of Options, Example & Payoff Calculation",
+                        "Introduction to Greeks: What are Greeks?, Use of Greeks, Options Buying Strategies (Call), Options Buying Strategies (Put)",
+                        "Option Buying Strategies (Live example on Stocks & Index, Bull Call Spreads & Bear Call Spreads (ITM, OTM & ATM), Straddles & Strangles",
+                        "Long Strategies: Call Ratio Backspread, Put Ratio, Back Spread, Long Butterfly Spread, Iron Condors, Iron Flies, Payoffs & Live Examples",
+                        "Spreads: Bull Call Spread (Revision), Converting it to Ratio Spreads, Bear Put Spread (Revision), Converting it to Ratio Spreads, Collar Spreads, Ratio Spreads, Standard & Reverse Jade Lizard",
+                        "Straddles & Strangles, Iron Fly & Iron Condors, Covered Calls & Cash Protected Puts, Advanced Selling Strategies, Revision & Practical Implications",
+                        "Open Interest (Advanced), Option Chain Analysis (Advanced), PCR Ratio & Max Pain",
+                        "All about Volatility: Explanation of IV, IVP, Normal Distribution & Stock Returns, Volatility Index, VIX Trading & Adjustments, Volatility Smile & Volatility Skew, Range Calculation using Historical Volatility"
+                    ]
+                },
+                {
+                    "id": "no-code-algo",
+                    "title": "No Code Algo",
+                    "classCount": 5,
+                    "fee": 8000,
+                    "topics": [
+                        "Option Selling Strategies: Straddle, Strangle Builders, Multi-leg Deployment",
+                        "Indicator-based Option Strategies: Combine Indicators, Options, Premium Threshold Entry, VIX Filtered Strategies",
+                        "Advanced Logic - ORB, Trending Day Filters, Capital Allocation Models",
+                        "Calendar-Based & Multi-Asset Algos: Day-Based Strategies, Index + Stock Combos, Multi Asset Deployment",
+                        "Algo Monitoring & Automation: Live Deployment Tips, Broker/API Integrations",
+                        "Introduction to Algo Trading",
+                        "Basics of No-Code Platforms: Overview of Tools, Workflow & Backtest Settings",
+                        "Building No Code Intraday Strategies: Stoploss, Targets, Win Rate, Max Drawdown, Expectancy",
+                        "Positional Strategy Automation: Multi-Day Strategies, Gap Up/Down Handling, Delivery vs MIS logic",
+                        "Algo Portfolio Management: Diversification in Algos & Capital Split Planning"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "diploma-stock-markets",
+            "title": "Diploma in Stock Markets : Beginners to Advance",
+            "description": "Complete comprehensive course covering everything from basics to advanced trading strategies. Perfect for beginners who want to become expert traders.",
+            "instructor": {
+                "name": "CA MANISH SINGH",
+                "image": "/tutor.png",
+                "bio": "Expert instructor with comprehensive knowledge in all aspects of stock market trading and investment.",
+                "qualifications": [
+                    "CA",
+                    "CFA",
+                    "SEBI Registered",
+                    "Complete Market Expert"
+                ]
+            },
+            "currentPrice": 35000,
+            "originalPrice": 50000,
+            "rating": 5,
+            "reviews": 298,
+            "enrollments": 7200,
+            "coverImage": "/course/param.jpg",
+            "themeColor": "blue",
+            "badge": "Premium",
+            "category": "Popular",
+            "isOpen": true,
+            "duration": "50+ Classes",
+            "modules": [
+                {
+                    "id": "basics-of-stock-market",
+                    "title": "Basics of Stock Market",
+                    "classCount": 15,
+                    "fee": 18000,
+                    "topics": [
+                        "Introduction to Investments",
+                        "Assets Class - Historical Returns",
+                        "What are Shares & Stocks?",
+                        "Primary Market",
+                        "Key Players in Secondary Market",
+                        "Broker & their role & responsibilities",
+                        "What is IPO? Steps in IPO",
+                        "Live Trading or Software Knowledge",
+                        "What is Market Capitalization?",
+                        "Types of Market Capitalization",
+                        "Taxation Part in Details",
+                        "Dividends, Ex-Date, Record Date",
+                        "Bonus: Why & How the Bonus is issued, ratio calculation",
+                        "Difference b/w Bonus & Splits",
+                        "Buyback, Merger, Demerger, FPO, OFS & Right Issue",
+                        "Acquisition & Delisting",
+                        "Terms like: Inflation, Interest Rates, Major Economic Terms"
+                    ]
+                },
+                {
+                    "id": "mutual-fund",
+                    "title": "Mutual Fund",
+                    "classCount": 8,
+                    "fee": 10000,
+                    "topics": [
+                        "Introduction to Mutual Funds: Benefits, NAV, Role of Fund Managers",
+                        "Types of Mutual Funds: Equity, Debt, Hybrid, ELSS, Growth vs Dividend Mutual Fund",
+                        "SIP vs Lump Sum Investing",
+                        "Risk & Return in Mutual Funds: Fund Volatility",
+                        "Risk Profiling: Conservative, Moderate & Aggressive",
+                        "Taxation on Mutual Funds: Dividend Distribution Tax vs Growth Option",
+                        "Equity Fund Taxation: LTCG, STCG",
+                        "How to Invest in Mutual Funds?",
+                        "Monitoring & Reviewing your Investments: When to Exit or switch a Fund, Tracking Fund Performance using Apps/Websites",
+                        "Mutual Fund Myths Busted",
+                        "Live Demo & Q/A Session"
+                    ]
+                },
+                {
+                    "id": "fundamental-analysis",
+                    "title": "Fundamental Analysis",
+                    "classCount": 12,
+                    "fee": 15000,
+                    "topics": [
+                        "Introduction to Fundamental Analysis: Importance of FA for Long-Term Investing & Wealth Creation",
+                        "Qualitative Analysis: Business Models, Analyze Revenue Sources & Scalability, Uniqueness, Understand Competitive advantages & Economic moats",
+                        "Industry & Sector Analysis: Understand the Company's position in its Sector (Market Share)",
+                        "Reading Annual Reports: Chairman's Letter, Financials, Notes to Accounts, Identifying Red Flags in Audit Reports & Disclosures",
+                        "Financial Statement Analysis: Balance Sheet, Profit & Loss Statement, Cash Flow Statement",
+                        "Financial Ratios: ROE, ROCE, Net Profit Margin, Current Ratio, Quick Ratio, Debt-to-Equity, Interest Coverage Ratio",
+                        "Valuation Methods: Price to Earnings (P/E), PEG Ratio, Forward PE & Earnings Yield concept",
+                        "Intrinsic Value & Margin of Safety, Discounted Cash Flow (DCF Model)",
+                        "Moat & Competitive Advantage: Brand, Patents, Cost Advantages, Network Effects",
+                        "Price to Book (P/B), EV/EBITDA & Price to Sales (P/S)"
+                    ]
+                },
+                {
+                    "id": "technical-analysis",
+                    "title": "Technical Analysis",
+                    "classCount": 15,
+                    "fee": 18000,
+                    "topics": [
+                        "Introduction to Technical Analysis?",
+                        "Difference between FA & TA",
+                        "Dow Theory (Phase of Markets)",
+                        "Introduction to Candlesticks",
+                        "Two Candle Patterns: Engulfing & Harami Patterns, Piercing Pattern & Dark Cloud Cover",
+                        "Three Candle Patterns: Falling & Rising Three, Morning Star & Evening Star",
+                        "Moving Averages: EMA & SMA, Calculations & Representation",
+                        "Trend Lines",
+                        "Complete Price Action Trading Setup",
+                        "Chart Patterns & Their Study (Price Channels: Bullish, Bearish, Cup & Handle, Rounding Top & Rounding Bottom)",
+                        "MACD (Moving Average Convergence and Divergence)",
+                        "RSI (Relative Strength Index)",
+                        "William % R",
+                        "Stochastics: Calculation, Use in Practical Trading (Intraday & Swing)",
+                        "Fibonacci Retracement & Extensions",
+                        "ADX & ATR",
+                        "Live Trading Session",
+                        "Psychology & Risk Management"
+                    ]
+                },
+                {
+                    "id": "derivatives-market",
+                    "title": "Derivatives Market (Futures & Options)",
+                    "classCount": 15,
+                    "fee": 18000,
+                    "topics": [
+                        "Introduction to Derivatives: Difference b/w Futures & Forwards, Basic Future Terminologies, Participants in Derivative Market",
+                        "Pricing of Futures: How to calculate Future Price?, Zone of Convergence, Physical Settlement",
+                        "Hedging: Hedging of Stocks with Futures, Concept of BETA, Hedging Using Index (Nifty & Bank Nifty)",
+                        "Options Introduction: What is Option Trading?, Comparison b/w Cash Market, Future Market & Option Market, Call Option, Moneyness of Option, Pricing of Options, Example & Payoff Calculation",
+                        "Introduction to Put Option: Moneyness of Option, Pricing of Options, Example & Payoff Calculation",
+                        "Introduction to Greeks: What are Greeks?, Use of Greeks, Options Buying Strategies (Call), Options Buying Strategies (Put)",
+                        "Option Buying Strategies (Live example on Stocks & Index, Bull Call Spreads & Bear Call Spreads (ITM, OTM & ATM), Straddles & Strangles",
+                        "Long Strategies: Call Ratio Backspread, Put Ratio, Back Spread, Long Butterfly Spread, Iron Condors, Iron Flies, Payoffs & Live Examples",
+                        "Spreads: Bull Call Spread (Revision), Converting it to Ratio Spreads, Bear Put Spread (Revision), Converting it to Ratio Spreads, Collar Spreads, Ratio Spreads, Standard & Reverse Jade Lizard",
+                        "Straddles & Strangles, Iron Fly & Iron Condors, Covered Calls & Cash Protected Puts, Advanced Selling Strategies, Revision & Practical Implications",
+                        "Open Interest (Advanced), Option Chain Analysis (Advanced), PCR Ratio & Max Pain",
+                        "All about Volatility: Explanation of IV, IVP, Normal Distribution & Stock Returns, Volatility Index, VIX Trading & Adjustments, Volatility Smile & Volatility Skew, Range Calculation using Historical Volatility"
+                    ]
+                },
+                {
+                    "id": "commodity-market",
+                    "title": "Commodity Market",
+                    "classCount": 3,
+                    "fee": 5000,
+                    "topics": [
+                        "Introduction to Commodities Market: Diversification, Hedging, Speculation, Commodities Exchanges",
+                        "Commodity Derivatives Explained: Futures Contracts in Commodities, Options in Commodities",
+                        "Fundamental Analysis in Commodities: Demand-Supply Drivers, Macroeconomics Triggers",
+                        "Hedging & Delivery Concepts",
+                        "Risk Management in Commodities: Volatility in Commodities, Position Sizing, Leverage Management",
+                        "Option Trading in Commodities: Commodity Options, Option Chain Analysis",
+                        "Technical Analysis for Commodities: Charts & Patterns, Key Indicators, Multi-timeframe Commodity Analysis",
+                        "Practice & Live Market Setup"
+                    ]
+                },
+                {
+                    "id": "forex-market",
+                    "title": "Forex Market",
+                    "classCount": 5,
+                    "fee": 7500,
+                    "topics": [
+                        "Introduction to Forex: Global Currency Market Overview, Forex as Over-the-Counter (OTC) Market, How Forex Trading Works?",
+                        "Participants & Types of Forex Markets",
+                        "Currency Quotes",
+                        "PiP Calculation: How to read Forex quotes, Lot Sizes, Spread & Commission Models",
+                        "Forex Trading Platforms: MT4, MT5 & Trading View",
+                        "Order Types: Market Order, Limit Order, Stop Order, Stop-Loss, Take Profit Orders, Trailing Stops",
+                        "Execution Models: Instant Execution, Market Execution, Slippage Execution",
+                        "Fundamental Analysis in Forex (Central Bank Policies, Major News & Events)"
+                    ]
+                },
+                {
+                    "id": "no-code-algo",
+                    "title": "No Code Algo",
+                    "classCount": 5,
+                    "fee": 8000,
+                    "topics": [
+                        "Option Selling Strategies: Straddle, Strangle Builders, Multi-leg Deployment",
+                        "Indicator-based Option Strategies: Combine Indicators, Options, Premium Threshold Entry, VIX Filtered Strategies",
+                        "Advanced Logic - ORB, Trending Day Filters, Capital Allocation Models",
+                        "Calendar-Based & Multi-Asset Algos: Day-Based Strategies, Index + Stock Combos, Multi Asset Deployment",
+                        "Algo Monitoring & Automation: Live Deployment Tips, Broker/API Integrations",
+                        "Introduction to Algo Trading",
+                        "Basics of No-Code Platforms: Overview of Tools, Workflow & Backtest Settings",
+                        "Building No Code Intraday Strategies: Stoploss, Targets, Win Rate, Max Drawdown, Expectancy",
+                        "Positional Strategy Automation: Multi-Day Strategies, Gap Up/Down Handling, Delivery vs MIS logic",
+                        "Algo Portfolio Management: Diversification in Algos & Capital Split Planning"
+                    ]
+                },
+                {
+                    "id": "psychology-risk-management",
+                    "title": "Psychology & Risk Management",
+                    "classCount": 3,
+                    "fee": 5000,
+                    "topics": [
+                        "Psychology of Trading",
+                        "Risk Management Principles",
+                        "Position Sizing",
+                        "Stop Loss Strategies",
+                        "Emotional Control in Trading",
+                        "Trading Discipline"
+                    ]
+                },
+                {
+                    "id": "trading-desk",
+                    "title": "Trading Desk",
+                    "classCount": 2,
+                    "fee": 3000,
+                    "topics": [
+                        "Live Trading Sessions",
+                        "Market Analysis",
+                        "Trade Execution",
+                        "Real-time Problem Solving"
+                    ]
+                }
+            ]
+        }
+    ]
+}
